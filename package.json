@@ -12,25 +12,20 @@
     "lint": "oxlint",
     "typecheck": "bun --cwd packages/app typecheck",
     "postinstall": "bun run --cwd packages/core fix-node-pty",
-    "prepare": "husky",
     "test": "echo 'do not run tests from root' && exit 1"
   },
   "workspaces": {
     "packages": [
       "packages/app",
-      "packages/client",
       "packages/codemode",
       "packages/core",
       "packages/effect-drizzle-sqlite",
       "packages/effect-sqlite-node",
-      "packages/http-recorder",
-      "packages/httpapi-codegen",
       "packages/llm",
       "packages/opencode",
       "packages/plugin",
       "packages/protocol",
       "packages/schema",
-      "packages/script",
       "packages/sdk/js",
       "packages/server",
       "packages/session-ui",
@@ -105,18 +100,16 @@
     "@tsconfig/bun": "catalog:",
     "@types/mime-types": "3.0.1",
     "@typescript/native-preview": "catalog:",
-    "husky": "9.1.7",
     "oxlint": "1.60.0",
     "oxlint-tsgolint": "0.21.0",
-    "prettier": "3.6.2",
-    "turbo": "2.10.2"
+    "prettier": "3.6.2"
   },
   "dependencies": {
     "typescript": "catalog:"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/anomalyco/opencode"
+    "url": "https://github.com/Sandeep-AdaptIQ/opencode"
   },
   "license": "MIT",
   "prettier": {
